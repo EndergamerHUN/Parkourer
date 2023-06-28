@@ -1,0 +1,4 @@
+name: Parkourer
+version: '${project.version}'
+main: io.github.endergamerhun.parkourer.Parkourer
+api-version: '1.19'
