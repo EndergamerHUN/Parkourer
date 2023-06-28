@@ -1,6 +1,7 @@
 package io.github.endergamerhun.parkourer.utils;
 
 import io.github.endergamerhun.parkourer.Parkourer;
+import io.github.endergamerhun.perkourer.managers.WorldProtection;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
@@ -43,5 +44,6 @@ public class PluginUtil {
         for (Listener listener: listeners) {
             manager.registerEvents(listener, plugin);
         }
+        manager.registerEvents(new WorldProtection(), plugin);
     }
 }
